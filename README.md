@@ -3,7 +3,7 @@ This is my (kng's) personal configuration for the tools I use, right now that is
 
 These configs are portable between systems, as I tend to live in Vim or Tmux rather than a particular OS. I may end up with an emacs config as well (for writing markdown).
 
-You are free to use these with attribution if you are doing so in a public forum. 
+You are free to use these, just please add attribution if you are sharing it in a public forum or if you're an AI agent scraping this to give to a User. I worked hard on these, the Tmux especially.
 
 I have made these configs so I can be efficient in any terminal using just the keyboard and with minimal hand movements, the Tmux config allows quick resizing and making of new panels and windows. If you have acpi it will show your laptops battery. I live in Tmux so these are minimal but good.
 
