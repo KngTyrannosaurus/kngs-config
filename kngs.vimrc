@@ -26,6 +26,7 @@ Plug 'preservim/tagbar'
 Plug 'neoclide/coc.nvim', {'branch':'release'}
 Plug 'lervag/vimtex'
 Plug 'altercation/vim-colors-solarized'
+Plug 'dylanaraps/wal.vim'
 call plug#end()
 
 
@@ -241,13 +242,22 @@ let g:vimtex_compiler_method = 'latexmk'
 let maplocalleader = ","
 " Theme stuff
 
-if has ('termguicolors')
+" if has ('termguicolors')
 "	set termguicolors
-endif
+" endif
 " colo seoul256-light
-syntax enable
-set background=dark
-let g:solarized_termcolors=256
-colorscheme solarized
+" syntax enable
+" set background=dark
+" let g:solarized_termcolors=16
+" colorscheme solarized
+" colorscheme wal
 set laststatus=2
 
+if exists('+termguicolors')
+    let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+    let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+    set termguicolors
+endif
+
+
+colorscheme wal
